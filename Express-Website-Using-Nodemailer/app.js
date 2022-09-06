@@ -40,7 +40,7 @@ app.post('/contact/send', (req, res) => {
 
     var mailOptions = {
         from: 'Whoever <youremail@gmail.com>',
-        to: 'otheremail@stu.cu.edu.ng',
+        to: 'otheremail@email.com',
         subject: 'Website Submission',
         text: `You have a submission with following details... Name: ${req.body.name}, Email: ${req.body.email}, Message: ${req.body.message}`,
         html: `<p>You have a submission with following details... <ul><li>Name: ${req.body.name}</li> <li>Email: ${req.body.email}</li> <li>Message: ${req.body.message}</li> </ul></p>`
